@@ -100,20 +100,64 @@
       <section>
         <div class="container lg:container mx-auto">
           <div
-            class="banner-area bg-[linear-gradient(45deg,rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url('./images/banner.png')] bg-no-repeat w-full text-center py-10 bg-cover pb16"
+            class="banner-area bg-[linear-gradient(45deg,rgba(19,19,24,0.20),rgba(19,19,24,0.20)),url('./images/banner.png')] bg-no-repeat w-full text-center rounded-[36px] px-10 pb-24 pt-24 bg-cover"
           >
             <h1 class="text-5xl font-bold text-white py-5">
               End-to-End Travel with
             </h1>
-            <p class="text-5xl text-green-600 font-bold py-5">P Paribahan</p>
+            <p class="text-5xl text-[#1dd100] font-bold py-5">P Paribahan</p>
             <p class="text-base text-white py-5">
               Yes, you can run unit tests and view the results directly within
               the app. The <br />
               integrated testing features allow for a streamlined .
             </p>
-            <button class="btn">Buy Tickets</button>
+            <button
+              class="btn bg-[#1dd100] border-2 border-[#1dd100] text-[18px] hover:bg-transparent hover:text-[#1dd100] hover:border-[#1dd100] transition duration-300 ease-out hover:ease-in mb-10"
+            >
+              Buy Tickets
+            </button>
           </div>
         </div>
+        <!-- banner count start -->
+
+        <div
+          class="container banner-count grid grid-cols-1 lg:grid-cols-3 justify-between items-center gap-10 px-24 -translate-y-16"
+        >
+          <div
+            class="register-part w-full flex justify-between items-center border-[#1dd100] border-b-4 py-6 px-8 rounded-[12px] bg-white"
+          >
+            <div class="regis-img">
+              <img src="images/people.png" alt="" />
+            </div>
+            <div class="regis-user">
+              <h1 class="text-[40px] font-bold">500K+</h1>
+              <p>Registered users</p>
+            </div>
+          </div>
+          <div
+            class="ticket-part w-full bg-white flex justify-between items-center border-[#1dd100] border-b-4 py-6 px-8 rounded-[12px]"
+          >
+            <div class="ticket-img">
+              <img src="images/ticket-cupon.png" alt="" />
+            </div>
+            <div class="ticket-sold">
+              <h1 class="text-[40px] font-bold">1.7 lacks</h1>
+              <p>Ticket Sold</p>
+            </div>
+          </div>
+          <div
+            class="partners-part w-full bg-white flex justify-between items-center border-[#1dd100] border-b-4 py-6 px-8 rounded-[12px]"
+          >
+            <div class="partners-img">
+              <img src="images/stoppage.png" alt="" />
+            </div>
+            <div class="rental-partners">
+              <h1 class="text-[40px] font-bold">80K+</h1>
+              <p>Rental Parnters</p>
+            </div>
+          </div>
+        </div>
+        <!-- banner count end -->
       </section>
       <!-- banner area end -->
     </main>
