@@ -7,11 +7,9 @@ for (const btn of allBtn) {
 
     const seatNumber = e.target.parentNode.childNodes[3].innerText;
 
-    // console.log(
-    //   e.target.parentNode.parentNode.parentNode.parentNode.childNodes[3]
-    //     .childNodes[5].childNodes[3].innerText
-    // );
-
+    e.target.parentNode.childNodes[3].style.backgroundColor = "#1dd100";
+    e.target.parentNode.childNodes[3].style.color = "white";
+    e.target.setAttribute("disabled", true);
     const seatClass =
       e.target.parentNode.parentNode.parentNode.parentNode.childNodes[3]
         .childNodes[5].childNodes[3].innerText;
@@ -35,6 +33,21 @@ for (const btn of allBtn) {
     li.appendChild(p);
     li.appendChild(p2);
     li.appendChild(p3);
+
+    const seatSelected = document.getElementById("seats-selected").innerText;
+
+    const convertedseatSelected = parseInt(seatSelected);
+    const minus1 = convertedseatSelected - parseInt(count);
+
+    setInnerText("seats-selected", minus1);
+    // document.getElementById("seats-selected").innerText =
+    //   convertedseatSelected - parseInt(count);
+
+    // if (convertedseatSelected - parseInt(seatSelected) <= 4) {
+    //   alert("Maximum 4 Tickets Buy");
+    //   return;
+    // }
+
     selectedContainer.appendChild(li);
 
     totalCost("total-cost", parseInt(seatPrice));
@@ -57,9 +70,10 @@ function totalCost(id, value) {
 }
 
 // grand total cost
-function grandTotalCost(id, value) {
-  const grandTotal = document.getElementById(id).innerText;
-  const convertedGrandTotal = parseInt(grandTotal);
-  const sum2 = convertedGrandTotal + parseInt(value);
-  setInnerText("grand-total", sum2);
+function grandTotalCost(category) {
+  const totalCost = document.getElementById("total-cost").innerText;
+  const convertedTotalCost = parseInt(totalCost);
+  setInnerText("grand-total", convertedTotalCost);
+  if (category == "new15") {
+  }
 }
