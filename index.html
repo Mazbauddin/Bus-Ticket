@@ -419,19 +419,21 @@
                       <span
                         id="seat-count"
                         class="font-semibold text-lg text-[#1dd100]"
-                      ></span>
+                      >
+                      </span>
                     </h2>
                     <h2 class="text-base font-medium">Class</h2>
                     <h2 class="text-base font-medium">Price</h2>
                   </div>
                   <div class="seat-economy flex justify-between py-3">
-                    <h2>C2</h2>
-                    <h2>Economy</h2>
-                    <h2>550</h2>
+                    <ul id="selected-seat-text" class="selected-seat-text"></ul>
+
+                    <h2 class="hidden">Economy</h2>
+                    <h2 class="hidden">550</h2>
                   </div>
                   <div class="seat-total-price flex justify-between py-3">
                     <h2>Total Price</h2>
-                    <h2>BDT 0</h2>
+                    <h2>BDT <span id="total-cost">0</span></h2>
                   </div>
                   <div class="coupon-input">
                     <label class="input input-bordered flex items-center gap-2">
@@ -449,7 +451,7 @@
                   </div>
                   <div class="grand-total-price flex justify-between py-3">
                     <h2>Grand Total</h2>
-                    <h2>BDT 0</h2>
+                    <h2>BDT <span id="grand-total">0</span></h2>
                   </div>
                   <div class="">
                     <label for="" class="font-bold text-xl text-black"
