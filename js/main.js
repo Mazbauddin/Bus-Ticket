@@ -31,7 +31,7 @@ for (const seat of seats) {
     } else if (count >= 4) {
       alert("Sorry!! You can not buy more than 4 tickets");
     } else {
-      alert("Seat Already Booked");
+      alert("Seat Already Booked. Please Selected Another Seat");
     }
   });
 }

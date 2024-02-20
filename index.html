@@ -168,10 +168,10 @@
           class="container banner-count grid grid-cols-1 lg:grid-cols-3 justify-between items-center gap-10 px-24 lg:-translate-y-16 mx-auto inter-fonts mt-5 lg:mt-0"
         >
           <div
-            class="register-part w-full flex justify-between items-center border-[#1dd100] border-b-4 border-t-4 lg:border-t-0 py-6 px-8 rounded-[12px] bg-white"
+            class="register-part w-full flex justify-center items-center border-[#1dd100] border-b-4 border-t-4 lg:border-t-0 py-6 px-8 rounded-[12px] bg-white"
           >
             <div class="regis-img">
-              <img src="images/people.png" alt="" />
+              <img class="mr-4" src="images/people.png" alt="" />
             </div>
             <div class="regis-user">
               <h1 class="text-[30px] lg:text-[40px] font-bold">500K+</h1>
@@ -179,10 +179,10 @@
             </div>
           </div>
           <div
-            class="ticket-part w-full bg-white flex justify-between items-center border-[#1dd100] border-b-4 py-6 px-8 rounded-[12px] border-t-4 lg:border-t-0"
+            class="ticket-part w-full bg-white justify-center flex items-center border-[#1dd100] border-b-4 py-6 px-8 rounded-[12px] border-t-4 lg:border-t-0"
           >
             <div class="ticket-img">
-              <img src="images/ticket-cupon.png" alt="" />
+              <img class="mr-4" src="images/ticket-cupon.png" alt="" />
             </div>
             <div class="ticket-sold">
               <h1 class="text-[30px] lg:text-[40px] font-bold">1.7 lacks</h1>
@@ -190,10 +190,10 @@
             </div>
           </div>
           <div
-            class="partners-part w-full bg-white flex justify-between items-center border-[#1dd100] border-b-4 py-6 px-8 rounded-[12px] border-t-4 lg:border-t-0"
+            class="partners-part w-full bg-white justify-center flex items-center border-[#1dd100] border-b-4 py-6 px-8 rounded-[12px] border-t-4 lg:border-t-0"
           >
             <div class="partners-img">
-              <img src="images/stoppage.png" alt="" />
+              <img class="mr-4" src="images/stoppage.png" alt="" />
             </div>
             <div class="rental-partners">
               <h1 class="text-[30px] lg:text-[40px] font-bold">80K+</h1>
@@ -228,7 +228,7 @@
             <div class="coupon-img hidden lg:block">
               <img src="images/cupon-devider.png" alt="" />
             </div>
-            <div class="coupon-new-15 p-12">
+            <div class="coupon-new-15 p-7 lg:p-12">
               <h1 class="text-2xl lg:text-3xl font-bold pb-2 raleway-fonts">
                 NEW15
               </h1>
@@ -248,7 +248,7 @@
             <div class="coupon-img hidden lg:block">
               <img src="images/cupon-devider.png" alt="" />
             </div>
-            <div class="coupon-new-15 p-14">
+            <div class="coupon-new-15 p-7 lg:p-14">
               <h1 class="text-2xl lg:text-3xl font-bold raleway-fonts">
                 Couple 20
               </h1>
@@ -292,10 +292,10 @@
                       <img src="images/bus-logo.png" alt="" />
                     </div>
                     <div>
-                      <h1 class="font-bold text-3xl text-[#030712]">
+                      <h1 class="font-bold text-xl lg:text-3xl text-[#030712]">
                         Greenline Paribahan
                       </h1>
-                      <p class="text-[--p-color] font-normal text-lg">
+                      <p class="font-normal text-lg">
                         Coach-009-WEB ! AC_Business
                       </p>
                     </div>
@@ -326,9 +326,13 @@
                   </div>
                   <hr class="border-dashed pb-5" />
                   <div class="grid lg:grid-cols-3 gap-5">
-                    <button class="btn">Boarding Point - Laxmipur</button>
-                    <button class="btn">Dropping Point - Bogura</button>
-                    <button class="btn">Est. Time - 11 Hour</button>
+                    <button class="btn bg-gray-300">
+                      Boarding Point - Laxmipur
+                    </button>
+                    <button class="btn bg-gray-300">
+                      Dropping Point - Bogura
+                    </button>
+                    <button class="btn bg-gray-300">Est. Time - 11 Hour</button>
                   </div>
                 </div>
               </div>
@@ -385,85 +389,165 @@
                 <hr class="border-dashed pb-5" />
 
                 <div class="flex justify-end mb-5">
-                  <button class="btn">
+                  <button class="btn bg-gray-300">
                     <img class="py-2" src="images/wheel.png" alt="" />
                   </button>
                 </div>
                 <div class="raleway-fonts text-lg">
                   <div class="grid grid-cols-5 gap-5 items-center">
                     <h1 class="text-center text-xl mb-[10px]">A</h1>
-                    <button id="seat" class="btn mb-3 text-lg">A1</button>
-                    <button id="seat" class="btn mb-3 text-lg">A2</button>
-                    <button id="seat" class="btn mb-3 text-lg">A3</button>
-                    <button id="seat" class="btn mb-3 text-lg">A4</button>
+                    <button id="seat" class="btn hover:shadow-2xl mb-3 text-lg">
+                      A1
+                    </button>
+                    <button id="seat" class="btn mb-3 hover:shadow-2xl text-lg">
+                      A2
+                    </button>
+                    <button id="seat" class="btn mb-3 hover:shadow-2xl text-lg">
+                      A3
+                    </button>
+                    <button id="seat" class="btn mb-3 hover:shadow-2xl text-lg">
+                      A4
+                    </button>
                   </div>
                   <div class="grid grid-cols-5 gap-5 items-center">
                     <h1 class="text-center text-xl mb-[10px]">B</h1>
-                    <button id="seat" class="btn mb-3 text-lg">B1</button>
-                    <button id="seat" class="btn mb-3 text-lg">B2</button>
-                    <button id="seat" class="btn mb-3 text-lg">B3</button>
-                    <button id="seat" class="btn mb-3 text-lg">B4</button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      B1
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      B2
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      B3
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      B4
+                    </button>
                   </div>
                   <div class="grid grid-cols-5 gap-5 items-center">
                     <h1 class="text-center text-xl mb-[10px]">C</h1>
-                    <button id="seat" class="btn mb-3 text-lg">C1</button>
-                    <button id="seat" class="btn mb-3 text-lg">C2</button>
-                    <button id="seat" class="btn mb-3 text-lg">C3</button>
-                    <button id="seat" class="btn mb-3 text-lg">C4</button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      C1
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      C2
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      C3
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      C4
+                    </button>
                   </div>
                   <div class="grid grid-cols-5 gap-5 items-center">
                     <h1 class="text-center text-xl mb-[10px]">D</h1>
-                    <button id="seat" class="btn mb-3 text-lg">D1</button>
-                    <button id="seat" class="btn mb-3 text-lg">D2</button>
-                    <button id="seat" class="btn mb-3 text-lg">D3</button>
-                    <button id="seat" class="btn mb-3 text-lg">D4</button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      D1
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      D2
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      D3
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      D4
+                    </button>
                   </div>
                   <div class="grid grid-cols-5 gap-5 items-center">
                     <h1 class="text-center text-xl mb-[10px]">E</h1>
-                    <button id="seat" class="btn mb-3 text-lg">E1</button>
-                    <button id="seat" class="btn mb-3 text-lg">E2</button>
-                    <button id="seat" class="btn mb-3 text-lg">E3</button>
-                    <button id="seat" class="btn mb-3 text-lg">E4</button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      E1
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      E2
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      E3
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      E4
+                    </button>
                   </div>
                   <div class="grid grid-cols-5 gap-5 items-center">
                     <h1 class="text-center text-xl mb-[10px]">F</h1>
-                    <button id="seat" class="btn mb-3 text-lg">F1</button>
-                    <button id="seat" class="btn mb-3 text-lg">F2</button>
-                    <button id="seat" class="btn mb-3 text-lg">F3</button>
-                    <button id="seat" class="btn mb-3 text-lg">F4</button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      F1
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      F2
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      F3
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      F4
+                    </button>
                   </div>
                   <div class="grid grid-cols-5 gap-5 items-center">
                     <h1 class="text-center text-xl mb-[10px]">G</h1>
-                    <button id="seat" class="btn mb-3 text-lg">G1</button>
-                    <button id="seat" class="btn mb-3 text-lg">G2</button>
-                    <button id="seat" class="btn mb-3 text-lg">G3</button>
-                    <button id="seat" class="btn mb-3 text-lg">G4</button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      G1
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      G2
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      G3
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      G4
+                    </button>
                   </div>
                   <div class="grid grid-cols-5 text-xl gap-5 items-center">
                     <h1 class="text-center mb-[10px]">H</h1>
-                    <button id="seat" class="btn mb-3 text-lg">H1</button>
-                    <button id="seat" class="btn mb-3 text-lg">H2</button>
-                    <button id="seat" class="btn mb-3 text-lg">H3</button>
-                    <button id="seat" class="btn mb-3 text-lg">H4</button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      H1
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      H2
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      H3
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      H4
+                    </button>
                   </div>
                   <div class="grid grid-cols-5 gap-5 items-center">
                     <h1 class="text-center text-xl mb-[10px]">I</h1>
-                    <button id="seat" class="btn mb-3 text-lg">I1</button>
-                    <button id="seat" class="btn mb-3 text-lg">I2</button>
-                    <button id="seat" class="btn mb-3 text-lg">I3</button>
-                    <button id="seat" class="btn mb-3 text-lg">I4</button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      I1
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      I2
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      I3
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      I4
+                    </button>
                   </div>
                   <div class="grid grid-cols-5 gap-5 items-center">
                     <h1 class="text-center text-xl">J</h1>
-                    <button id="seat" class="btn mb-3 text-lg">J1</button>
-                    <button id="seat" class="btn mb-3 text-lg">J2</button>
-                    <button id="seat" class="btn mb-3 text-lg">J3</button>
-                    <button id="seat" class="btn mb-3 text-lg">J4</button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      J1
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      J2
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      J3
+                    </button>
+                    <button id="seat" class="btn mb-3 text-lg hover:shadow-2xl">
+                      J4
+                    </button>
                   </div>
                 </div>
               </div>
               <div
-                class="col-span-1 border-r-2 border-dashed border-black mr-10 hidden lg:block"
+                class="col-span-1 border-r-2 border-dashed border-gray-300 mr-10 hidden lg:block"
               ></div>
               <div class="col-span-5">
                 <div class="pb-5">
@@ -614,14 +698,16 @@
                       Next
                     </div>
                     <div
-                      class="flex justify-around items-center font-normal text-base text-[--p-color mt-3]"
+                      class="flex justify-around items-center font-normal text-base"
                     >
-                      <span class="border-b-[1px] border-[--p-color]"
-                        >Terms and Conditions</span
-                      >
-                      <span class="border-b-[1px] border-[--p-color]"
-                        >Cancellation Policy</span
-                      >
+                      <nav class="grid lg:grid-flow-col gap-4 w-full">
+                        <a class="link hover:text-green-500"
+                          >Terms and Conditions</a
+                        >
+                        <a class="link hover:text-green-500"
+                          >Cancellation Policy</a
+                        >
+                      </nav>
                     </div>
                   </form>
                 </div>
@@ -695,7 +781,7 @@
           <aside class="items-center grid-flow-col w-full">
             <p>@all rights reserved, P-Ticket services limited.2024</p>
           </aside>
-          <nav class="grid grid-flow-col gap-4 w-full">
+          <nav class="grid lg:grid-flow-col gap-4 w-full">
             <a class="link link-hover">Terms & condition</a>
             <a class="link link-hover">Return & refund policy</a>
             <a class="link link-hover">Privacy policy</a>
