@@ -10,3 +10,17 @@ ul.selected-seat-text li {
   width: 450px;
   margin: 20px 0px;
 }
+
+.change_seat_click {
+  background-color: #1dd100;
+  color: #ffffff;
+}
+
+.change_seat_click:hover {
+  background-color: #1dd100;
+  color: #ffffff;
+}
+
+.model {
+  background-color: rgb(30, 30, 30);
+}

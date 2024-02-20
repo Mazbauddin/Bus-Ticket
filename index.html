@@ -185,13 +185,17 @@
         <!-- banner count end -->
       </section>
       <!-- banner area end -->
-      <section class="container offers-area mx-auto">
+      <!-- coupon area start -->
+
+      <section id="couponArea" class="container offers-area mx-auto">
         <div class="site-heading py-16">
           <h1 class="font-bold text-5xl text-center raleway-fonts">
             Best offers for you
           </h1>
         </div>
-        <div class="coupon-area flex mb-20 gap-10 justify-between">
+        <div
+          class="coupon-area grid grid-cols-1 lg:grid-cols-2 mb-20 gap-10 justify-between"
+        >
           <div class="coupon-left rounded-[12px] flex grow bg-[#ffbf10]">
             <div class="coupon-text p-12">
               <h1 class="font-bold text-4xl pb-2 inter-fonts">15% off</h1>
@@ -233,7 +237,9 @@
           </button>
         </div>
       </section>
-      <!-- paribahan part -->
+      <!-- coupon area end -->
+      <!-- paribahan area start -->
+
       <section
         id="buy-tickets"
         class="bg-[#f7f8f8] border-t-4 border-[#1dd100] rounded-xl pb-20"
@@ -242,10 +248,10 @@
           <div class="seat-count">
             <div class="site-heading py-16 text-center">
               <h1 class="font-bold text-5xl text-center">P.H Paribahan</h1>
-              <p class="pt-8">
+              <p class="pt-8 text-center m-auto text-lg lg:w3/5">
                 Yes, you can run unit tests and view the results directly within
-                the app. The integrated <br />
-                testing features allow for a streamlined .
+                the app. The <br />
+                integrated testing features allow for a streamlined .
               </p>
             </div>
             <div
@@ -428,30 +434,43 @@
                     <h2 class="text-base font-medium">Class</h2>
                     <h2 class="text-base font-medium">Price</h2>
                   </div>
-                  <div class="seat-economy flex justify-between py-3">
-                    <ul id="selected-seat-text" class="selected-seat-text"></ul>
+                  <div
+                    id="addPerSeatPrice"
+                    class="seat-economy flex justify-between py-3"
+                  >
+                    <!-- <ul id="selected-seat-text" class="selected-seat-text"></ul>
 
                     <h2 class="hidden">Economy</h2>
-                    <h2 class="hidden">550</h2>
+                    <h2 class="hidden">550</h2> -->
                   </div>
+                  <!-- <hr class="mt-3 border-dashed pb-5" /> -->
                   <div class="seat-total-price flex justify-between py-3">
                     <h2>Total Price</h2>
                     <h2>BDT <span id="total-cost">0</span></h2>
                   </div>
+                  <div class="seat-total-price flex justify-between py-3">
+                    <h2>Discount</h2>
+                    <h2>BDT <span id="total-discount-price">0</span></h2>
+                  </div>
                   <div class="coupon-input">
                     <label class="input input-bordered flex items-center gap-2">
                       <input
+                        id="input-field"
                         type="text"
                         class="grow"
                         placeholder="Have any copupon?"
                       />
+                      <p id="errorMsg" class="text-red-600"></p>
                       <button
-                        onclick="grandTotalCost('new15')"
+                        id="apply-btn"
                         class="category-btn px-3 py-2 rounded-lg bg-[#1dd100] border-2 border-[#1dd100] text-[18px] hover:bg-transparent hover:text-[#1dd100] hover:border-[#1dd100] transition duration-300 ease-out hover:ease-in"
                       >
                         Apply
                       </button>
                     </label>
+                    <p class="text-xl font-bold py-2">
+                      <span id="discount-Price"></span>
+                    </p>
                   </div>
                   <div class="grand-total-price flex justify-between py-3">
                     <h2>Grand Total</h2>
@@ -462,28 +481,35 @@
                       >Passenger Name*</label
                     ><br />
                     <input
+                      id="name"
                       type="text"
                       placeholder="Enter your name"
                       class="input mt-5 bg-[#13131805] w-full mb-5"
+                      required
                     />
                     <label for="" class="font-bold text-xl text-black"
                       >Phone Number*</label
                     ><br />
                     <input
+                      id="phoneNo"
                       type="number"
                       placeholder="Enter your phone number"
+                      required
                       class="input mt-5 bg-[#13131805] w-full mb-5"
                     />
                     <label for="" class="font-bold text-xl text-black"
                       >Email ID</label
                     ><br />
                     <input
+                      id="emailId"
                       type="email"
                       placeholder="Enter your email id"
                       class="input mt-5 bg-[#13131805] w-full mb-5"
+                      required
                     />
                   </div>
                   <button
+                    id="submitBtn"
                     onclick="my_modal_1.showModal()"
                     class="w-full py-2 rounded-lg bg-[#1dd100] text-white border-2 border-[#1dd100] text-[18px] hover:bg-transparent hover:text-[#1dd100] hover:border-[#1dd100] transition duration-300 ease-out hover:ease-in mb-5"
                   >
@@ -500,7 +526,7 @@
         </div>
 
         <!-- Open the modal using ID.showModal() method -->
-        <dialog id="my_modal_1" class="modal">
+        <dialog id="my_modal_1" class="modal bg-white">
           <div class="modal-box text-center">
             <img class="mx-auto py-10" src="images/success.png" alt="" />
             <h3 class="font-bold text-2xl text-[#1dd100]">SUCCESS</h3>
@@ -523,6 +549,7 @@
           </div>
         </dialog>
       </section>
+      <!-- paribahan area end -->
     </main>
     <!-- footer area start -->
 
