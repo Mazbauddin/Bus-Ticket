@@ -1,10 +1,10 @@
 const seats = document.querySelectorAll("#seat");
 let count = 0;
-let dublicateCheck = [];
+let doubleCheck = [];
 
 for (const seat of seats) {
   seat.addEventListener("click", function (event) {
-    if (dublicateCheck.includes(seat.innerHTML) === false && count < 4) {
+    if (doubleCheck.includes(seat.innerHTML) === false && count < 4) {
       seat.classList.add("change_seat_click");
       const addSeatPrice = document.getElementById("addSeatPrice");
       const p = document.createElement("p");
@@ -27,7 +27,7 @@ for (const seat of seats) {
         couponCheck();
       }
 
-      dublicateCheck.push(seat.innerHTML);
+      doubleCheck.push(seat.innerHTML);
     } else if (count >= 4) {
       alert("Sorry!! You can not buy more than 4 tickets");
     } else {
@@ -99,4 +99,8 @@ function setInnerText(id, value) {
 function getInnerTextById(id) {
   const InnerText = document.getElementById(id);
   return InnerText.innerHTML;
+}
+
+function reloadPage() {
+  location.reload();
 }
