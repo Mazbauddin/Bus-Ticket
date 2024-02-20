@@ -29,7 +29,7 @@
     <script src="tailwind.config.js"></script>
 
     <!-- custom css link -->
-    <link rel="stylesheet" href="css/style.css" />
+
     <style>
       * {
         padding: 0;
@@ -137,12 +137,16 @@
       <section id="bannerSection">
         <div class="container lg:container mx-auto">
           <div
-            class="banner-area bg-[linear-gradient(45deg,rgba(19,19,24,0.20),rgba(19,19,24,0.20)),url('./images/banner.png')] bg-no-repeat w-full text-center rounded-[36px] px-10 pb-24 pt-24 bg-cover"
+            class="banner-area bg-[linear-gradient(45deg,rgba(19,19,24,0.20),rgba(19,19,24,0.20)),url('./images/banner.png')] bg-no-repeat lg:w-full text-center rounded-[36px] px-10 pb-24 pt-24 bg-cover"
           >
-            <h1 class="text-5xl font-bold text-white py-5 raleway-fonts">
+            <h1
+              class="text-3xl lg:text-5xl font-bold text-white py-5 raleway-fonts"
+            >
               End-to-End Travel with
             </h1>
-            <p class="text-5xl text-[#1dd100] font-bold py-5 raleway-fonts">
+            <p
+              class="text-3xl lg:text-5xl text-[#1dd100] font-bold py-5 raleway-fonts"
+            >
               P Paribahan
             </p>
             <p class="text-base text-white py-5 inter-fonts">
@@ -161,38 +165,38 @@
         <!-- banner count start -->
 
         <div
-          class="container banner-count grid grid-cols-1 lg:grid-cols-3 justify-between items-center gap-10 px-24 -translate-y-16 mx-auto inter-fonts"
+          class="container banner-count grid grid-cols-1 lg:grid-cols-3 justify-between items-center gap-10 px-24 lg:-translate-y-16 mx-auto inter-fonts mt-5 lg:mt-0"
         >
           <div
-            class="register-part w-full flex justify-between items-center border-[#1dd100] border-b-4 py-6 px-8 rounded-[12px] bg-white"
+            class="register-part w-full flex justify-between items-center border-[#1dd100] border-b-4 border-t-4 lg:border-t-0 py-6 px-8 rounded-[12px] bg-white"
           >
             <div class="regis-img">
               <img src="images/people.png" alt="" />
             </div>
             <div class="regis-user">
-              <h1 class="text-[40px] font-bold">500K+</h1>
+              <h1 class="text-[30px] lg:text-[40px] font-bold">500K+</h1>
               <p>Registered users</p>
             </div>
           </div>
           <div
-            class="ticket-part w-full bg-white flex justify-between items-center border-[#1dd100] border-b-4 py-6 px-8 rounded-[12px]"
+            class="ticket-part w-full bg-white flex justify-between items-center border-[#1dd100] border-b-4 py-6 px-8 rounded-[12px] border-t-4 lg:border-t-0"
           >
             <div class="ticket-img">
               <img src="images/ticket-cupon.png" alt="" />
             </div>
             <div class="ticket-sold">
-              <h1 class="text-[40px] font-bold">1.7 lacks</h1>
+              <h1 class="text-[30px] lg:text-[40px] font-bold">1.7 lacks</h1>
               <p>Ticket Sold</p>
             </div>
           </div>
           <div
-            class="partners-part w-full bg-white flex justify-between items-center border-[#1dd100] border-b-4 py-6 px-8 rounded-[12px]"
+            class="partners-part w-full bg-white flex justify-between items-center border-[#1dd100] border-b-4 py-6 px-8 rounded-[12px] border-t-4 lg:border-t-0"
           >
             <div class="partners-img">
               <img src="images/stoppage.png" alt="" />
             </div>
             <div class="rental-partners">
-              <h1 class="text-[40px] font-bold">80K+</h1>
+              <h1 class="text-[30px] lg:text-[40px] font-bold">80K+</h1>
               <p>Rental Parnters</p>
             </div>
           </div>
@@ -204,42 +208,50 @@
 
       <section id="couponArea" class="container offers-area mx-auto">
         <div class="site-heading py-16">
-          <h1 class="font-bold text-5xl text-center raleway-fonts">
+          <h1 class="font-bold text-3xl lg:text-5xl text-center raleway-fonts">
             Best offers for you
           </h1>
         </div>
         <div
-          class="coupon-area grid grid-cols-1 lg:grid-cols-2 mb-20 gap-10 justify-between"
+          class="coupon-area grid grid-cols-1 lg:grid-cols-2 mb-20 gap-10 justify-between mx-10 lg:mx-0"
         >
           <div class="coupon-left rounded-[12px] flex grow bg-[#ffbf10]">
-            <div class="coupon-text p-12">
-              <h1 class="font-bold text-4xl pb-2 inter-fonts">15% off</h1>
+            <div class="coupon-text p-7 lg:p-12">
+              <h1 class="font-bold text-3xl lg:text-4xl pb-2 inter-fonts">
+                15% off
+              </h1>
               <p class="font-semibold text-[20px] pb-2 inter-fonts">
                 on your next purchase
               </p>
               <p class="text-[18px] inter-fonts">use by January 2024</p>
             </div>
-            <div class="coupon-img h-full">
+            <div class="coupon-img hidden lg:block">
               <img src="images/cupon-devider.png" alt="" />
             </div>
             <div class="coupon-new-15 p-12">
-              <h1 class="text-3xl font-bold pb-2 raleway-fonts">NEW15</h1>
+              <h1 class="text-2xl lg:text-3xl font-bold pb-2 raleway-fonts">
+                NEW15
+              </h1>
               <p class="text-xl raleway-fonts">Coupon Code</p>
             </div>
           </div>
           <div class="coupon-right rounded-[12px] flex grow bg-[#f78c9c]">
-            <div class="coupon-text p-12">
-              <h1 class="font-bold text-4xl inter-fonts">20% OFF</h1>
+            <div class="coupon-text p-7 lg:p-12">
+              <h1 class="font-bold text-3xl lg:text-4xl inter-fonts">
+                20% OFF
+              </h1>
               <p class="font-semibold text-[20px] inter-fonts">
                 on your next purchase
               </p>
               <p class="text-[18px] inter-fonts">use by January 2024</p>
             </div>
-            <div class="coupon-img">
+            <div class="coupon-img hidden lg:block">
               <img src="images/cupon-devider.png" alt="" />
             </div>
             <div class="coupon-new-15 p-14">
-              <h1 class="text-3xl font-bold raleway-fonts">Couple 20</h1>
+              <h1 class="text-2xl lg:text-3xl font-bold raleway-fonts">
+                Couple 20
+              </h1>
               <p class="text-xl raleway-fonts">Coupon Code</p>
             </div>
           </div>
@@ -271,7 +283,7 @@
               </p>
             </div>
             <div
-              class="grid lg:grid-cols-6 gap-6 justify-center items-center bg-[#FFFFFF] rounded-3xl pl-10 pr-10"
+              class="grid grid-cols-1 lg:grid-cols-6 gap-6 justify-center items-center bg-[#FFFFFF] rounded-3xl pl-10 pr-10"
             >
               <div class="col-span-4">
                 <div class="lg:flex items-center justify-between mb-10">
@@ -289,10 +301,12 @@
                     </div>
                   </div>
 
-                  <div class="flex items-center gap-2">
-                    <div class="ticket-seats float-end">
+                  <div
+                    class="flex justify-center lg:justify-normal items-center gap-2"
+                  >
+                    <div class="ticket-seats lg:float-end">
                       <button
-                        class="btn hover:bg-transparent border-2 border-[#1dd100] text-[#1dd100] text-[18px] bg-[#ddf8d9] hover:border-[#1dd100] transition duration-300 ease-out hover:ease-in mb-10"
+                        class="btn hover:bg-transparent border-2 border-[#1dd100] text-[#1dd100] text-[18px] bg-[#ddf8d9] hover:border-[#1dd100] transition duration-300 ease-out hover:ease-in mb-10 mt-10 lg:mt-0"
                       >
                         <img src="images/seat-green.png" alt="" />
                         <span id="seatsSelected">40</span> Seats left
@@ -311,14 +325,14 @@
                     <p class="text-lg font-semibold">9:00 PM</p>
                   </div>
                   <hr class="border-dashed pb-5" />
-                  <div class="grid grid-cols-3 gap-5">
+                  <div class="grid lg:grid-cols-3 gap-5">
                     <button class="btn">Boarding Point - Laxmipur</button>
                     <button class="btn">Dropping Point - Bogura</button>
                     <button class="btn">Est. Time - 11 Hour</button>
                   </div>
                 </div>
               </div>
-              <div class="col-span-1 ml-16">
+              <div class="col-span-1 ml-16 hidden lg:block">
                 <img src="images/info-devider.png" alt="" class="" />
               </div>
 
@@ -449,7 +463,7 @@
                 </div>
               </div>
               <div
-                class="col-span-1 border-r-2 border-dashed border-black mr-10"
+                class="col-span-1 border-r-2 border-dashed border-black mr-10 hidden lg:block"
               ></div>
               <div class="col-span-5">
                 <div class="pb-5">
@@ -641,7 +655,7 @@
     <!-- footer area start -->
 
     <section id="footerSection" class="footer-area bg-[#030712] text-white">
-      <footer class="container py-20 mx-auto">
+      <footer class="container py-20 mx-auto px-20 lg:px-0">
         <div
           class="footer-content w-full grid grid-cols-1 lg:grid-cols-12 justify-between items-end border-dashed border-b-2 border-indigo-200 py-10"
         >
